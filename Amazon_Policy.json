@@ -37,7 +37,7 @@
       "Action": [
         "*"
       ],
-      "Effect": "Allow",
+      "Effect": "Deny",
       "Resource": [
         "*"
       ]
