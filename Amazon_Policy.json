@@ -28,7 +28,7 @@
         "ec2:PurchaseReservedInstancesOffering",
         "ec2:RequestSpotInstances"
       ],
-      "Effect": "Deny",
+      "Effect": "Allow",
       "Resource": [
         "*"
       ]
