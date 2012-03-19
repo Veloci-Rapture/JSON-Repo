@@ -1,0 +1,28 @@
+﻿{
+  "Statement": [
+    {
+      "Sid": "Stmt1331761195466",
+      "NotAction": [
+        "iam:GetGroup",
+        "iam:ListGroupPolicies"
+      ],
+      "Effect": "Deny",
+      "Resource": [
+        "arn:aws:iam::*:group/Stratalux*",
+        "arn:aws:iam::*:group/Customer_Admin",
+        "arn:aws:iam::*:group/Software*"
+      ]
+    },
+{
+   "Action": [
+        "iam:ListAccountAliases",
+        "iam:CreateAccountAliases",
+        "iam:DeleteAccountAliases"
+      ],
+      "Effect": "Deny",
+      "Resource": [
+        "*"
+      ]
+}
+  ]
+}

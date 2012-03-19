@@ -1,0 +1,51 @@
+{
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "NotAction": "iam:*",
+      "Resource": "*"
+    },
+      {
+      "Action": [
+        "iam:CreateGroup",
+        "iam:DeleteGroup",
+        "iam:DeleteGroupPolicy",
+        "iam:GetAccountSummary",
+        "iam:PutGroupPolicy",
+        "iam:PutUserPolicy",
+        "iam:UpdateGroup"
+      ],
+      "Effect": "Deny",
+      "Resource": [
+        "*"
+      ]
+    },
+    {
+      "Action": [
+        "ec2:CancelSpotInstanceRequests",
+        "ec2:CreateSpotDatafeedSubscription",
+        "ec2:DeleteSpotDatafeedSubscription",
+        "ec2:DescribeReservedInstances",
+        "ec2:DescribeReservedInstancesOfferings",
+        "ec2:DescribeSpotDatafeedSubscription",
+        "ec2:DescribeSpotInstanceRequests",
+        "ec2:DescribeSpotPriceHistory",
+        "ec2:PurchaseReservedInstancesOffering",
+        "ec2:RequestSpotInstances"
+      ],
+      "Effect": "Deny",
+      "Resource": [
+        "*"
+      ]
+    },
+    {
+      "Action": [
+        "*"
+      ],
+      "Effect": "Allow",
+      "Resource": [
+        "*"
+      ]
+    }
+  ]
+}
